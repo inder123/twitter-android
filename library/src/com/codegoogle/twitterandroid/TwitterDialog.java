@@ -29,7 +29,7 @@ import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
+import com.codegoogle.twitterandroid.R;
 
 
 public final class TwitterDialog extends Dialog {
