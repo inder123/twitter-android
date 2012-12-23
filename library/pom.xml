@@ -2,7 +2,7 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.codegoogle.twitterandroid</groupId>
+  <groupId>com.singhinderjeet</groupId>
   <artifactId>twitter-android</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>apklib</packaging>
@@ -11,6 +11,18 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>cloudbees-private-snapshot-repository</id>
+      <name>Cloudbees Private Repository</name>
+      <url>${snapshot-repo.url}</url>
+    </snapshotRepository>
+    <repository>
+      <id>cloudbees-private-release-repository</id>
+      <name>Cloudbees Private Repository</name>
+      <url>${release-repo.url}</url>
+    </repository>
+  </distributionManagement>
   <dependencies>
     <dependency>
       <groupId>oauth.signpost</groupId>
